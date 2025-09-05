@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Submit {
+            position:relative;
+            top: 10px;
+            height: 70px;
+            width: 80px;
+            color: black;
+            font-size: 20px;
+            background-color: white;
+            border-radius: 10px;
+left: 30px;
+
+animation-timing-function: ease-in-out;
+animation-delay: 1s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+        }
+.progressContainer{
+    position: relative;
+    height: 20px;
+    width: 90%;
+    left: 30px;
+    background-color: lightgreen;
+    border: 2px solid black;
+    border-radius: 20px;
+   
+}
+.progressbar{
+    height: 20px;
+     
+background-color: red;
+ border-radius: 20px;
+ animation:progressbar 3s 5 ;
+}
+         
+
+            @keyframes progressbar {
+               0%{width: 0%;}
+                50%{width: 95%;}
+                95%{width: 70%;}
+               100%{
+                width: 100%;
+               }
+            }
+        
+    </style>
+</head>
+
+<body>
+   <div class="progressContainer">
+    <div class="progressbar"></div>
+   </div>
+</body>
+
+</html>
